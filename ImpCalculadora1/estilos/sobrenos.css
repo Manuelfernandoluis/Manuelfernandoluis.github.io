@@ -1,0 +1,70 @@
+
+@charset "UTF-8";
+
+/* Device break points
+Celular:600px até 768px
+tablet:768px até 992px
+Telas maiores:992px até infinito
+*/
+
+html,body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+     
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    /*background-color: blue;*/
+    color: white;
+}
+
+ 
+
+main{
+    display: flex;
+    justify-content: center;
+  
+}
+
+section{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 0.9em;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+/*Vamos adicionar media-queries nessa página */
+
+/*Responsividade para tablet*/
+@media screen and (min-width:768px) and (max-width:992px){
+section{
+    width: 350px;
+    font-size: 1em;
+
+}
+
+}
+
+/*Vamos adicionar media-queries nessa página */
+
+/*Responsividade para telas maiores */
+
+@media screen and (min-width:992px){
+    section{
+        width: 400px;
+        font-size: 1.2em;
+    }
+}

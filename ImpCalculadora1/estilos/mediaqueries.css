@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*Vamos fazer o comportamento ou seja a responsividade da nossa ImpCalculadora*/
+
+/*Device breakpoints
+celular:600px até 768px
+tablet:768px até 992px
+tela maior:992px até maior*/
+
+
+/*Largura ideial para tablet*/
+@media screen and (min-width:768px) and (max-width:992px){
+
+    body{
+         background-image: linear-gradient(black,rgba(0, 0, 0, 0.377));
+    }
+
+    main{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;/*Alinha no centro quanto a largura*/
+    }
+
+    main>section#calcular{
+        width: 300px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+    main>section#calcular>#texto{
+        margin-top: 70px;
+    }
+
+    main>section#our{
+        width: 300px;
+        font-size: 1em;   
+    }
+
+     
+
+}
+
+/*Largura ideial para pc e telas maiores */
+@media screen and (min-width:992px){
+
+    body{
+        background-image: linear-gradient(black,rgba(0, 0, 0, 0.377));
+   }
+
+   main{
+       display: flex;
+   flex-direction: row;
+   justify-content: center;/*Alinha no centro quanto a largura*/
+   }
+
+   main>section#calcular{
+       width: 400px;
+       margin-right: 10px;
+       font-size: 1.2em;
+   }
+
+   main>section#calcular>#texto{
+       margin-top: 70px;
+   }
+
+   main>section#our{
+       width: 400px;
+       font-size: 1.2em;   
+   }
+
+}

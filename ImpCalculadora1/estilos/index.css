@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/*Versão Mobile first*/
+
+html,body{
+    /*Vamos deixar tudo de forma responsiva */
+    height: 100vh;
+    
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    /*background-color: blue;*/
+    align-items: center;
+    color: white;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+     align-items: center;/*Alinhamos no centro quanto a haltura*/
+    /*background-color: blue;*/
+   /* width:590px;*/
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*Vamos fazer as caixas */
+main>section#calcular{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/*Vamos  estilizar os botões */
+button#calcular{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+ 
+}
+
+button#calcular:hover{
+    background-color: black;
+     
+}
+
+button#calcular>#btnCalcular{
+    color: black;/*Cor preta para a letra */
+    text-decoration: none;/*Sem decoração*/
+}
+
+button#calcular>#btnCalcular:hover{
+    color: white;
+    font-weight: bold;
+}
+
+/*Sobre nós*/
+main>section#our{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/*Vamos estilizar os nossos botões */
+button#sobrenos{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button#sobrenos:hover{
+    background-color: black;
+}
+
+button#sobrenos>#btnSobrenos{
+    color: black;/*Cor preta para a letra */
+    text-decoration: none;/*Sem decoração*/
+}
+
+button#sobrenos>#btnSobrenos:hover{
+    color: white;
+    font-weight: bold;
+}
